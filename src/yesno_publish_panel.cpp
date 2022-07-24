@@ -53,7 +53,7 @@ void YesNoPublishPanel::lineEditChanged()
   else
     topic_name_ = ui_->line_edit->text().toStdString();
 
-  RCLCPP_INFO(LOGGER, "You set the topic name : %s", topic_name_.c_str());
+  RCLCPP_DEBUG(LOGGER, "You set the topic name : %s", topic_name_.c_str());
 
   if(old_topic_name != topic_name_)
     pub_ = node_->create_publisher<std_msgs::msg::Bool>(topic_name_, 1);
@@ -61,12 +61,12 @@ void YesNoPublishPanel::lineEditChanged()
 
 void YesNoPublishPanel::respondYes()
 {
-    RCLCPP_INFO(LOGGER, "You pushed the Yes button.");
     yes_button_->setDown(true);
     no_button_->setDown(false);
     std_msgs::msg::Bool msg;
     msg.data = static_cast<bool>(1);
     pub_->publish(msg);
+    RCLCPP_DEBUG(LOGGER, "You pushed the Yes button.");
 }
 
 void YesNoPublishPanel::respondNo()
@@ -76,7 +76,7 @@ void YesNoPublishPanel::respondNo()
     std_msgs::msg::Bool msg;
     msg.data = static_cast<bool>(0);
     pub_->publish(msg);
-    RCLCPP_INFO(LOGGER, "You pushed the No button.");
+    RCLCPP_DEBUG(LOGGER, "You pushed the No button.");
 }
 
 }  // namespace rviz_plugins

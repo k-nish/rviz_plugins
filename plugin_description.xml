@@ -1,0 +1,8 @@
+<library path="rviz_plugins">
+  <!-- Dial Panel -->
+  <class name="rviz_plugins/YesNoPublishPanel" type="rviz_plugins::YesNoPublishPanel" base_class_type="rviz_common::Panel">
+    <description>
+      YesNo Publish Panel plugin.
+    </description>
+  </class>
+</library>

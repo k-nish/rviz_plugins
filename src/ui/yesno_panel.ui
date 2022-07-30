@@ -91,19 +91,6 @@
         </item>
        </layout>
       </item>
-      <!-- <item> -->
-      <!--  <widget class="QPushButton" name="pushButton"> -->
-      <!--   <property name="text"> -->
-      <!--    <string>Publish</string> -->
-      <!--   </property> -->
-      <!--   <property name="checkable"> -->
-      <!--    <bool>false</bool> -->
-      <!--   </property> -->
-      <!--   <property name="checked"> -->
-      <!--    <bool>false</bool> -->
-      <!--   </property> -->
-      <!--  </widget> -->
-      <!-- </item> -->
      </layout>
     </item>
   </layout>

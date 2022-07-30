@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>YesNoUI</class>
+ <widget class="QWidget" name="YesNoUI">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+    <string>YesNoButton</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+      <widget class="QLabel" name="message">
+        <property name="text">
+          <string>Select yes or no.</string>
+        </property>
+      </widget>
+    </item>
+    <property name="spacing">
+      <number>0</number>
+    </property>
+    <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+          <widget class="QPushButton" name="yes">
+            <property name="toolTip">
+              <string>Yes Button</string>
+            </property>
+            <property name="text">
+              <string>Yes</string>
+            </property>
+            <property name="iconSize">
+              <size>
+                <width>16</width>
+                <height>16</height>
+              </size>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="QPushButton" name="no">
+            <property name="toolTip">
+              <string>No Button</string>
+            </property>
+            <property name="text">
+              <string>No</string>
+            </property>
+            <property name="iconSize">
+              <size>
+                <width>16</width>
+                <height>16</height>
+              </size>
+            </property>
+          </widget>
+        </item>
+      </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Topic Name</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::PlainText</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>false</bool>
+          </property>
+          <property name="openExternalLinks">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="line_edit"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
